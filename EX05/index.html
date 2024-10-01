@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em JS</title>
+    <style>
+        body {
+            font: 25pt ARIAL;
+            font-weight: bolder;
+            
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados JS </h1>
+    <button onclick="inicio()">Clique para começar</button>
+
+    <section id="resultado">
+        <p>Aqui irá aparecer o resultado...</p>
+    </section>
+    
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual seu nome  ?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> Olá,<strong>${nome}</strong>
+            Seja Bem vindo ao World JS !` ;
+        }
+    </script>
+</body>
+</html>
