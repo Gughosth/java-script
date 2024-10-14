@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document de Dados Nacionais </title>
+</head>
+<body>
+    <div id="res"></div>
+
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="Pesquisar()">
+
+    <script>
+        function Pesquisar() {
+            var pais = 'EUA'
+            txtpais.innerHTML += `Vivendo no ${pais}`
+            var pais = document.getElementById('txtpais')
+            var res = document.getElementById('res')
+            if (pais=='Brasil') {
+                txtpais.innerHTML += `Voce é brasileiro`
+            } else {
+                txtpais.innerHTML += `Voce é estrangeiro`
+            }
+        }
+    </script>
+    
+</body>
+</html>
